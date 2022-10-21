@@ -10,7 +10,10 @@ def Pages():
 
     if (BtRH):
         st.session_state.page = "Relatorios RH"
+        st.experimental_rerun()
     if (BtRDV):
         st.session_state.page = "Relatorios RDV"
+        st.experimental_rerun()
     if (BtDenuncias):
         st.session_state.page = "Relatorios Denuncias"
+        st.experimental_rerun()

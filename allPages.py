@@ -4,6 +4,12 @@ import streamlit as st
 from pages.Principais import relatorios
 from pages.RH import RH
 
+#Colaboradores
+from pages.Principais import colaboradores
+
+# Projetos
+from pages.Principais import projetos
+
 def Pages():
 
     # Inicialização do State
@@ -18,7 +24,7 @@ def Pages():
     # --------------------------------------------------------------------
     # Projetos
     if (st.session_state.page == 'Projetos'):
-        st.text("Projetos")
+        projetos.Projetos()
 
     # --------------------------------------------------------------------
     # Relatórios
@@ -31,4 +37,4 @@ def Pages():
     # --------------------------------------------------------------------
     # Colaboradores
     if (st.session_state.page == 'Colaboradores'):
-        st.text("Colaboradores")
+        colaboradores.Colaboradores()
